@@ -1,14 +1,15 @@
-  const menuIcon = document.getElementById('menu-icon');
-  const navbar = document.querySelector('.navbar');
-  const navLinks = document.querySelectorAll('.navbar a');
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelectorAll('.navbar a');
 
-  menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-  });
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navbar.classList.remove('active');
-    });
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('active');
   });
+});
+
 
